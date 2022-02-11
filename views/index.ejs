@@ -7,6 +7,16 @@
     <!-- Main Site -->
     <main id="site-main">
         <div class="container">
+           
+            <form class="box-nav d-flex " action="/" method="GET">
+                <input class="searchbar" type="text" placeholder="Search data..." name="resName">
+                <button>
+                    <a href="/find-user" class="border-shadow">
+                    <i class="fas fa-search"></i>
+                </a>
+                </button>
+            </form>
+            
             <div class="box-nav d-flex justify-between">
                 <a href="/add-user" class="border-shadow">
                     <span class="text-gradient">New User <i class="fas fa-user"></i></span>
@@ -20,9 +30,8 @@
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
+                            <th>Phone</th>
                             <th>@Email</th>
-                            <th>Gender</th>
-                            <th>Status</th>
                             <th>Action</th>
                         </tr>
                     </thead>
